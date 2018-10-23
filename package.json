@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ForiDunk/ng-clasifieds/issues"
   },
-  "homepage": "https://github.com/ForiDunk/ng-clasifieds#readme"
+  "homepage": "https://github.com/ForiDunk/ng-clasifieds#readme",
+  "dependencies": {
+    "angular": "^1.7.5"
+  }
 }
