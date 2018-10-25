@@ -22,7 +22,7 @@
                     "Vehicles",
                     "Parts and Accessories"
                   ],
-                  "image": "https://images.unsplash.com/photo-1518111742073-ddc0b2ce79e8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6645dd57c698f3e1dd31827e46945a53&auto=format&fit=crop&w=1350&q=80",
+                  "image": "https://images.unsplash.com/photo-1464086419240-388de55da36e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e6fbc623d2b50f1b488b2c7535f34b1e&auto=format&fit=crop&w=1398&q=80",
                   "views":213
                 },
                 {
