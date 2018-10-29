@@ -25,6 +25,12 @@
                 vm.categories = getCategories(vm.classifieds);
             });
 
+            $scope.$on('newClassified', function(event, classified) {
+                classified.id = vm.classifieds.length + 1;
+                vm.classifieds.push(classified);
+                showToast("Classified Saved!");
+            })
+
             var contact = {
                 name: 'Szabolcs Forreiter',
                 phone: '(555) 555-5555',
