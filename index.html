@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
     <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css" media="all" type="text/css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body ng-app="ngClassifieds" ng-controller="classifiedsCtrl">
 
@@ -24,6 +25,10 @@
             </md-button>
         </div>
     </md-toolbar>
+
+    <md-button ui-sref="one">go to state one</md-button>
+    <md-button ui-sref="two">go to state two</md-button>
+    <ui-view></ui-view>
 
     <div class="filters" layout='row' layout-align="center" ng-show="showFilters">
         <md-input-container>
@@ -120,5 +125,6 @@
     <script src="components/classifieds.ctr.js"></script>
     <script src="components/classifieds.fac.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 </body>
 </html>
