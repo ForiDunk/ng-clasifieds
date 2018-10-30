@@ -25,8 +25,7 @@
             });
 
             $scope.$on('newClassified', function(event, classified) {
-                classified.id = vm.classifieds.length + 1;
-                vm.classifieds.push(classified);
+                vm.classifieds.$add(classified);
                 showToast("Classified Saved!");
             });
             $scope.$on('editSaved', function(event, message) {
@@ -56,8 +55,7 @@
             };
             function editClassified(classified) {
                 $state.go('classifieds.edit', {
-                    id: classified.id,
-                    classified: classified
+                    id: classified.$id
                 });
             };
             function saveEdit() {
@@ -73,8 +71,8 @@
                     .cancel('No')
                     .targetEvent(event);
                 $mdDialog.show(confirm).then(function() {
-                    var index = vm.classifieds.indexOf(classified);
-                    vm.classifieds.splice(index, 1);
+                    vm.classifieds.$remove(classified);
+                    showToast('Classified deleted!!');
                 }, function() {/* to do when the user clicks 'No' */});
             };
 
