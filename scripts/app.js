@@ -1,5 +1,5 @@
 angular
-    .module("ngClassifieds", ["ngMaterial", "ui.router"])
+    .module("ngClassifieds", ["ngMaterial", "ui.router", "firebase"])
     .config(function($mdThemingProvider, $stateProvider, $locationProvider) {
 
         $mdThemingProvider.theme('default').primaryPalette('teal').accentPalette('orange');
